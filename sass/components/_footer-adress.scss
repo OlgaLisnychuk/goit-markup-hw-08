@@ -1,0 +1,49 @@
+.adress__overlay {
+    min-width: 231px;
+}
+
+.address {
+margin-top: 20px;
+
+&__list {
+    @extend %list;
+font-style: normal;   
+}
+
+&__item:not(:last-child) {
+margin-bottom: 9px;
+}
+&__list {
+    @extend %list;
+font-style: normal;   
+}
+
+&__item:not(:last-child) {
+margin-bottom: 9px;
+}
+
+}
+
+.address__link {
+    @extend %link;
+line-height: 1.71; 
+transition-property: color;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+&--place {
+    color: $primaryWhiteColor;
+}
+
+&--contact {
+color: $secondaryWhitColor;
+
+}
+
+&:hover,
+&:focus {
+    color: $accentColor;
+}
+
+}
+

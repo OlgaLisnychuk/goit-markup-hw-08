@@ -1,0 +1,14 @@
+.header {
+    @include borderdered-bottom ($headerBorderColor);
+   
+}  
+
+
+/* Main-Naw */
+
+.main-naw {
+    display: flex;
+    align-items: center;
+}
+   
+

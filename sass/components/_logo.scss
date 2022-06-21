@@ -1,0 +1,26 @@
+
+.logo {
+    @extend %link;
+        margin-right: 93px;
+        color: $accentColor;
+        font-family: $fontFamilyLogo;
+        font-weight: $fontWeightLogo;
+        font-size: $fontSizeLogo;
+        line-height: $lineHeightLogo;
+   
+    
+    &--accent {
+        color: $titleTextColor;
+        
+    }
+} 
+
+.footer__logo {
+    margin-right: 0;
+
+
+&--accent {
+    color: $primaryWhiteColor;
+    
+}
+}

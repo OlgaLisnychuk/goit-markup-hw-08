@@ -1,0 +1,84 @@
+
+.team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background-color: $endBgColor;
+
+    &__list {
+        @extend %list;
+       display: flex;
+       }
+       
+       &__item {
+           background-color: $primaryWhiteColor;
+           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+           border-radius: 0px 0px 4px 4px;
+           
+           &:not(:last-child) {
+            margin-right: 30px;
+            }
+
+       }
+       
+       
+       &__overlay {
+           padding-top: 30px;
+           padding-bottom: 30px;
+       }
+       
+       &__name {
+           
+           margin-bottom: 10px;
+           color: $titleTextColor;
+           font-style: normal;
+           font-weight: 500;
+           font-size: 16px;
+           line-height: 1.19;
+           text-align: center;
+       }
+       &__text {   
+       font-size: 16px;
+       line-height: 1.19;
+       text-align: center;
+       }
+    }
+    
+    
+    
+    .social-list {
+    @extend %list;   
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+
+    &__item:not(:last-child) {
+        margin-right: 10px;
+        }
+        
+        &__link {
+        @extend %link;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        color: $klientsColor;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+        }
+        
+        &__link:hover,
+        &__link:focus {
+        color: $primaryWhiteColor;    
+        background-color: $accentColor;
+        }
+        
+        &__icon {
+        width: 20px; 
+        height: 20px;
+        fill: currentColor;
+        }
+
+    }
+    
+    
