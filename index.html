@@ -25,7 +25,18 @@
       <div class="container main-naw">
         <a class="logo link" href="">Web<span class="logo--accent">Studio</span></a>
 
-        <nav>
+        <nav class="header__nav">
+          <button type="button" class="menu-button is-open" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+            <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+              <use class="icon-cross" href="./images/sptite.svg#icon-close-cress"></use>
+              <use class="icon-menu" href="./images/sptite.svg#icon-menu-first"></use>
+            </svg>
+          </button>
+
+          <div class="menu-container" id="menu-container" data-menu> 
+Контент меню
+          </div>
+
           <ul class="site-nav list">
             <li class="site-nav__item"><a class="site-nav__link link site-nav__link--current" href="">Студия</a></li>
             <li class="site-nav__item"><a class="site-nav__link link" href="./portfolio.html">Портфолио</a></li>
@@ -63,8 +74,9 @@
             для вашего бизнеса
           </h1>
           <button class="button hero__button" type="button" data-modal-open>Заказать услугу</button>
+        </div>   
         </section>
-        </div>
+        
         
 
       <!--peculiarities-->
@@ -530,5 +542,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+
   </body>
 </html>
