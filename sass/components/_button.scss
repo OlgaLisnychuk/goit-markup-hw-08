@@ -70,6 +70,10 @@
     padding: 0;
     border: none;
     background-color: transparent;
+
+    @media screen and (min-width: 767px) {
+       display: none; 
+    }
 }
 
 .menu-button .icon-cross {
