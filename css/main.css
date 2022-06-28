@@ -834,6 +834,7 @@ p {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #2F303A;
+  text-align: center;
 }
 
 .footer__title {
@@ -904,10 +905,20 @@ p {
   color: #2196F3;
 }
 
+.do {
+  margin-bottom: 115px;
+}
+
 .do__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 206px;
 }
 
@@ -950,14 +961,11 @@ p {
 }
 
 .sign-up__form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin-top: 20px;
 }
 
 .sign-up__input {
-  width: 358px;
+  width: 100%;
   height: 50px;
   background: #2F303A;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -975,7 +983,7 @@ p {
           align-items: center;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-  margin-right: 12px;
+  margin-bottom: 20px;
 }
 
 .sign-up__icon {
