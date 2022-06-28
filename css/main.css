@@ -836,15 +836,6 @@ p {
   background-color: #2F303A;
 }
 
-.footer__overlay {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-}
-
 .footer__title {
   font-size: 14px;
   line-height: 1.14;
@@ -860,6 +851,13 @@ p {
 
 .address {
   margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .address {
+    margin-bottom: 0px;
+  }
 }
 
 .address__list {
@@ -867,7 +865,13 @@ p {
 }
 
 .address__item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .address__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
 }
 
 .address__list {
@@ -898,10 +902,6 @@ p {
 
 .address__link:hover, .address__link:focus {
   color: #2196F3;
-}
-
-.do {
-  margin-left: 70px;
 }
 
 .do__list {
@@ -1301,21 +1301,32 @@ textarea {
 }
 
 .portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .button-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 8px;
 }
 
-.button-list__item:not(:last-child) {
-  margin-right: 8px;
+@media screen and (min-width: 768px) {
+  .button-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .button-list__btn {
@@ -1355,9 +1366,21 @@ textarea {
 }
 
 .project-list__item {
-  width: calc((100% - 90px) / 3);
-  margin-left: 30px;
+  width: 100%;
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .project-list__item {
+    width: calc((100% - 60px) / 2);
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .project-list__item {
+    width: calc((100% - 90px) / 3);
+  }
 }
 
 .project {

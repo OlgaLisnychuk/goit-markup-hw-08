@@ -4,6 +4,12 @@
 
 .address {
 margin-top: 20px;
+margin-bottom: 60px;
+
+@include tablet {
+    margin-bottom: 0px;
+} 
+
 
 &__list {
     @extend %list;
@@ -11,7 +17,12 @@ font-style: normal;
 }
 
 &__item:not(:last-child) {
-margin-bottom: 9px;
+    margin-bottom: 8px; 
+
+@include tablet {
+    margin-bottom: 9px;
+} 
+
 }
 &__list {
     @extend %list;
