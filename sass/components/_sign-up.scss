@@ -1,13 +1,31 @@
 .sign-up {
-    margin-left: auto;
+
+    @media screen and (min-width:480px) and (max-width: 1199px) {
+        flex-grow: 1; 
+    } 
+   
+
+    @include desktop {
+       width: 570px;
+       margin-left: auto;
+    }
 
     &__form {
-        // display: flex;
         margin-top: 20px;
+
+
+        @include tablet {
+             display: flex;
+         } 
+
+         @media screen and (min-width: 480px) and (max-width: 1199px) {
+            flex-direction: column;  
+         }
+        
         }
         
         &__input {
-        // width: 358px;
+    
         width: 100%;
         height: 50px;
         background: #2F303A;
@@ -24,8 +42,20 @@
         align-items: center;
         letter-spacing: 0.03em;
         color: rgba(255, 255, 255, 0.6);
-        // margin-right: 12px;
+    
         margin-bottom: 20px;
+
+        @media screen and (min-width: 480px) and (max-width: 1199px) {
+            width: 450px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @include desktop {
+            width: 358px;
+            margin-right: 12px;
+            margin-bottom: 0px;
+        }
         }
 
         &__icon {
@@ -57,7 +87,11 @@
     background-color: $accentColor;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
     
-    
+    @media screen and (min-width: 480px) and (max-width: 1199px) {
+       
+        margin-left: auto;
+        margin-right: auto;
+    }
 
   
     &:hover,

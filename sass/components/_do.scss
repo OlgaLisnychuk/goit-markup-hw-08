@@ -1,19 +1,31 @@
-.do {
-    // margin-left: 70px;
+.do__overlay {
+    @media screen and (min-width: 480px), (max-width: 1199px) {
+        flex-grow: 1;
+    }
+}
 
+
+.do {
     margin-bottom: 115px;
     
-    
+    @include desktop  {
+        margin-left: 70px;
+        margin-bottom: 0px;
+    }
 
     &__list {
         @extend %list;
     display: flex;
     align-items: center;
-    justify-content: center;
-    // width: 206px;
+    justify-content: center; 
     width: 100%;
-    // text-align: center;
     
+    
+@include desktop {
+    width: 206px;
+    text-align: center;
+}
+
     }
     
     &__item:not(:last-child) {

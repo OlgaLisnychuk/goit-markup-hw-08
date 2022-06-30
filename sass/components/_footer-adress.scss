@@ -1,5 +1,9 @@
 .adress__overlay {
     min-width: 231px;
+
+      @media screen and (min-width: 480px), (max-width: 1199px) {
+        flex-grow: 1;
+    }
 }
 
 .address {

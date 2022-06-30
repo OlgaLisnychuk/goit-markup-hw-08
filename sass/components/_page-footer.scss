@@ -3,13 +3,22 @@
     padding-bottom: 60px;
     background-color: $futerBgColor;
     text-align: center;
+
+    @include desktop {
+        text-align: start;
+    }
    
 
     &__overlay {
 
-       
-        // display: flex;
-        // align-items: baseline;
+       @include tablet {
+        display: flex;
+        flex-wrap: wrap;
+       }
+        @include desktop {
+            align-items: baseline;
+        }
+        
         }
 
         &__title {
