@@ -1,6 +1,10 @@
 .project {
     @extend %link;
-    display: block;
+    //  display: block;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+   
     box-shadow: none;
     transition-property: box-shadow;
     transition-duration: 250ms;
@@ -15,6 +19,9 @@
         padding: 20px 24px;
         @include  bordered ($portfolioBorderColor);
         border-top: none;
+        width: 100%;
+        flex-grow: 1;
+        
     }
 
 
@@ -52,6 +59,8 @@
         &__img {
             @extend %img;
         }
+
+        
     
 }
     /* Portfolio Thumb */

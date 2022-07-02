@@ -26,12 +26,15 @@
         <a class="logo link" href="">Web<span class="logo--accent">Studio</span></a>
 
         <nav class="header__nav">
+
           <button type="button" 
           class="menu-button is-open" 
           aria-expanded="false" 
           aria-controls="menu-container" 
           data-menu-button>
-            <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+
+            <svg width="40" height="40" 
+            aria-label="Переключатель мобильного меню">
               <use class="icon-cross" href="./images/sptite.svg#icon-close-cress"></use>
               <use class="icon-menu" href="./images/sptite.svg#icon-menu-first"></use>
             </svg>
@@ -220,7 +223,26 @@
           <ul class="team__list list">
             <!--igor-->
             <li class="team__item">
-              <img class="team__img img" src="./images/img4.jpg" alt="Фото Игоря" width="" height="" />
+<picture>
+  <source  
+  srcset="./images/img4.jpg 1x, ./images/igor-desktop2x.jpg 2x"
+  media="(min-width: 1200px)"
+   >
+   <source  
+   srcset="./images/igor-tablet1x.jpg 1x, ./images/igor-tablet2x.jpg 2x"
+   media="(min-width: 768px)"
+    >
+    <source  
+    srcset="./images/igor-mobile1x.jpg 1x, ./images/igor-mobile2x.jpg 2x"
+    media="(min-width: 320px)"
+     >
+     <img class="team__img img"
+    
+      src="./images/igor-mobile1x.jpg" 
+      alt="Фото Игоря" 
+      width="450" height="460" />
+</picture>
+
               <div class="team__overlay">
                 <h3 class="team__name">Игорь Демьяненко</h3>
                 <p class="team__text">Product Designer</p>
@@ -258,7 +280,29 @@
             </li>
             <!--olha-->
             <li class="team__item">
-              <img class="team__img img" src="./images/img5.jpg" alt="Фото Ольги" width="270" height="260" />
+<picture>
+  <source
+  srcset="./images/img5.jpg 1x, ./images/olga-desktop2x.jpg 2x"
+  media="(min-width: 1200px)"
+  >
+  <source
+  srcset="./images/olga-tablet1x.jpg 1x, ./images/olga-tablet2x.jpg 2x"
+  media="(min-width: 768px)"
+  >
+  <source
+  srcset="./images/olga-mobile1x.jpg 1x, ./images/olga-mobile2x.jpg 2x"
+  media="(min-width: 320px)"
+  >
+  <img class="team__img img" 
+ 
+  src="./images/olga-mobile1x.jpg" 
+  alt="Фото Ольги"
+   width="450" height="460" />
+  
+</picture>
+
+
+    
               <div class="team__overlay">
                 <h3 class="team__name">Ольга Репина</h3>
                 <p class="team__text">Frontend Developer</p>
@@ -296,13 +340,29 @@
             </li>
             <!--nicolay-->
             <li class="team__item">
-              <img
+              <picture>
+                <source
+                srcset="./images/img6.jpg 1x, ./images/nicolay-desktop2x.jpg 2x"
+                media="(min-width: 1200px)"
+                >
+                <source
+                srcset="./images/nikolay-tablet1x.jpg 1x, ./images/nikolay-tablet2x.jpg 2x"
+                media="(min-width: 768px)"
+                >
+                <source
+                srcset="./images/nikolay-mobile1x.jpg 1x, ./images/nikolay-mobile2x.jpg 2x"
+                media="(min-width: 320px)"
+                >
+                <img
                 class="team__img img"
-                src="./images/img6.jpg"
+                src="./images/nikolay-mobile1x.jpg"
                 alt="Фото Николая"
-                width="270"
-                height="260"
+                width="450"
+                height="460"
               />
+                
+              </picture>
+              
               <div class="team__overlay">
                 <h3 class="team__name">Николай Тарасов</h3>
                 <p class="team__text">Marketing</p>
@@ -340,13 +400,30 @@
             </li>
             <!--michael-->
             <li class="team__item">
-              <img
+              <picture>
+                <source
+                srcset="./images/img7.jpg 1x, ./images/misha-desktop2x.jpg 2x"
+                media="(min-width: 1200px)"
+                >
+                <source
+                srcset="./images/misha-tablet1x.jpg 1x, ./images/misha-tablet2x.jpg 2x"
+                media="(min-width: 768px)"
+                >
+                <source
+                srcset="./images/misha-mobile1x.jpg 1x, ./images/misha-mobile2x.jpg 2x"
+                media="(min-width: 320px)"
+                >
+                <img
                 class="team__img img"
-                src="./images/img7.jpg"
+                src="./images/misha-mobile1x.jpg"
                 alt="Фото Михаила"
-                width="270"
-                height="260"
+                width="450"
+                height="460"
               />
+                
+              </picture>
+
+             
               <div class="team__overlay">
                 <h3 class="team__name">Михаил Ермаков</h3>
                 <p class="team__text">UI Designer</p>
