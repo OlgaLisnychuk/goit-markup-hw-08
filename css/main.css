@@ -153,9 +153,6 @@ p {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .main-naw {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -340,7 +337,6 @@ p {
 }
 
 .logo {
-  margin-right: 93px;
   color: #2196F3;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -351,6 +347,12 @@ p {
 @media screen and (min-width: 768px) {
   .logo {
     margin-right: 88px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    margin-right: 93px;
   }
 }
 

@@ -1,7 +1,7 @@
 
 .logo {
     @extend %link;
-        margin-right: 93px;
+        
         color: $accentColor;
         font-family: $fontFamilyLogo;
         font-weight: $fontWeightLogo;
@@ -11,6 +11,10 @@
         @media screen and (min-width: 768px) {
             margin-right: 88px;  
            }
+
+        @include desktop  {
+            margin-right: 93px; 
+        }
    
     
     &--accent {
