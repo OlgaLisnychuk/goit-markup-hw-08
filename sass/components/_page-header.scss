@@ -192,7 +192,7 @@ letter-spacing: 0.02em;
     height: 100vh;
     padding-top: 10px;
     padding-bottom: 48px;
-    z-index: 1;
+    z-index: 99;
     
     &.is-hidden {
         display: block;
