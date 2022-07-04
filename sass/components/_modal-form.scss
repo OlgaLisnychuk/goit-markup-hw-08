@@ -3,9 +3,13 @@ textarea {
     }
     
     .form {
-        width: 448px;
+        width: 370px;
         margin-left: auto;
         margin-left: auto;
+
+        @include desktop {
+            width: 448px;
+        }
 
         &__field {
             display: flex;
@@ -91,21 +95,33 @@ textarea {
     display: flex; 
     align-items: center;
     height: 24px; 
-    padding-left: 36px;
+    padding-left: 20px;
     margin-top: 20px;
+
+@include desktop {
+    padding-left: 36px; 
+}
 
     &__label {
         font-weight: 400;
-        font-size: 14px;
-        line-height: 1.71;
+        font-size: 11px;
+        line-height: 1.17;
         letter-spacing: 0.03em;
         color: $primaryTextColor;
         margin-right: 3px;
+       
+
+         @include desktop {
+             font-size: 14px; 
+             line-height: 1.71;
+            margin-right: 3px;
+         }
         }
             
         &__label--accent {
         text-decoration-line: underline;
         color: $accentColor;
+        margin-right: 0;
         }
         
         &__input {
@@ -124,7 +140,7 @@ textarea {
     .checkbox__icon {
     position: absolute;
     top: 4px;
-    left: 13px;
+    left: 0px;
     display: inline-block;
     width: 16px;
     height: 15px; 
@@ -133,6 +149,10 @@ textarea {
     background-size: contain;
     background-origin: border-box;
     transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @include desktop {
+        left: 13px; 
+    }
     
     .checkbox__input:checked + & {
         background-image: url(../images/icon-check-color.svg);

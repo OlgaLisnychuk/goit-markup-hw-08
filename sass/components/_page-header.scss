@@ -97,18 +97,20 @@
         display: flex;
         margin-left: auto;
     }
-   
 
 
 &__item + &__item {
-    //  @media screen and (max-width: 767px) {
-    //      margin-top: 10px;
-    //  }
+@media screen and (max-width: 767px) {
+     margin-top: 10px;
+ }
 
-    @include desktop {
-        margin-left: 50px;
-    }
+   @include desktop {
+      margin-left: 50px;
+  }
 }
+
+    
+
 
 &__link {
     @extend %link;
@@ -162,6 +164,7 @@ letter-spacing: 0.02em;
 
 .auth-nav__icon--tablet {
     fill: currentColor;
+    
     
     margin-right: 8px;
    
