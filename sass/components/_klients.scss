@@ -1,6 +1,6 @@
 
 .klients {
-    // padding: 94px 0;
+    
     padding-top: 60px;
     padding-bottom: 60px;
 
@@ -19,24 +19,34 @@
             @extend %list;
         display: flex;
         flex-wrap: wrap;
-        gap: 30px;
+        justify-content: center;
+        margin: -15px;
+        
         }
         
-        // &__item:not(:last-child) {
-        // margin-right: 33px;
-        // }
+         
 
         &__item {
-            width: calc((100% - 30px) / 2);
+
+           margin: 15px;
+
+            @include mobile {
+               
+                width: calc((100% - 60px) / 2); 
+            }
+           
 
             @include tablet {
-                width: calc((100% - 60px) / 3); 
+                width: calc((100% - 90px) / 3); 
             }
 
             @include desktop {
-                width: calc((100% - 150px) / 6);
+                width: calc((100% - 180px) / 6);
             }
         }
+
+
+
         
         &__link {
             @extend %link;

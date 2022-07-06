@@ -215,12 +215,20 @@ letter-spacing: 0.02em;
     justify-content: space-between; 
     height: 100%;
     overflow-y: auto;
-    padding-left: 40px;
+    padding-left: 35px;
+
+     @include mobile {
+         padding-left: 40px; 
+     }
 
    
 }
 
-
+.mob-menu-list {
+    display: flex;
+ flex-wrap: wrap;
+ flex-direction: column;
+}
 
 .mob-menu-list__item {
 margin-bottom: 32px;
@@ -247,10 +255,14 @@ color: $accentColor;
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 500;
-font-size: 34px;
+font-size: 25px;
 line-height: 1.18;
 letter-spacing: 0.02em;
 color: $accentColor;
+
+ @include mobile {
+     font-size: 34px; 
+ }
 
 }
 
@@ -259,17 +271,23 @@ color: $accentColor;
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 500;
-font-size: 24px;
+font-size: 20px;
+
 line-height: 1.17;
 letter-spacing: 0.02em;
 
 color: $primaryTextColor;
 margin-top: 32px;
 
+@include mobile {
+     font-size: 24px;  
+ }
+
 }
 
 .mob-soc-list {
     display: flex;
+ flex-wrap: wrap;
     margin-top: 64px;
 }
 
@@ -280,14 +298,22 @@ margin-top: 32px;
 
 .mob-soc-list__item:not(:first-child) {
     border-left: 1px solid rgba(33, 33, 33, 0.2);
-    padding-left: 10px;
+    padding-left: 8px;
+
+    @include mobile {
+        padding-left: 10px; 
+    }
 
 }
 
 
 .mob-soc-list__item:not(:last-child) {
     border-right: 1px solid rgba(33, 33, 33, 0.2);
-    padding-right: 10px;
+    padding-right: 8px;
+
+    @include mobile {
+        padding-right: 10px; 
+     }
     
 }
 
@@ -295,11 +321,15 @@ margin-top: 32px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 11px;
     line-height: 1.22;
     letter-spacing: 0.02em;
     
     color: $accentColor;
+
+     @include mobile {
+         font-size: 18px; 
+     }
 }
 
 // .menu-container {
