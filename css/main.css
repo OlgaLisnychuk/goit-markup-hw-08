@@ -260,14 +260,16 @@ p {
   fill: currentColor;
 }
 
-.auth-nav__icon {
-  fill: currentColor;
-  margin-right: 10px;
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .auth-nav__icon {
     display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .auth-nav__icon {
+    fill: currentColor;
+    margin-right: 10px;
   }
 }
 
@@ -286,10 +288,6 @@ p {
   .auth-nav__icon--tablet {
     display: none;
   }
-}
-
-.auth-nav__icon--tablet:not(:last-child) {
-  margin-bottom: 8px;
 }
 
 .mob-menu {
